@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL LINE ENCODER</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Monoton|Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    
+    <div id="app">
+        
+        <div id="appBanner" class="hideAppBanner">
+            <p id="bannerText">ADXPERQ-KJXR-TRDJKSH</p>
+            <button id="nextButton" class="progressButtons nextButtonHide" >&rarr;</button>
+        </div>
+        
+        <form id="signalParams" class="hide">
+            <label for="signalLength">Enter the number signal bits</label>
+            <input type="number" id="signalLength" min=2 required>
+            <button id="signalParamsButton" class="progressButtons nextButtonHide">&rarr;</button>
+        </form>
+
+        <form id="signalData" class="hide">
+            <div id="signalBitWrapper">
+                <p id="signalBitStreamHeaderText" class="labelText">Enter the signal bits</p>
+                <div id="signalBitStream"></div>
+            </div>
+            <button id="signalDataButton" class="progressButtons nextButtonHide">&rarr;</button>
+        </form>
+
+        <div id="encodingMonitor" class="hide" >
+            <div id="loaderWrapper" class="showLoader">
+                <div class="loader-16"></div>
+                <p id="loaderText">..................</p>
+            </div>
+            <div id="signalStream" class="hide">
+                <div id="signalStreamText">DIGITAL STREAM</div>
+                <div id="signalStreamBits"></div>
+            </div>
+            <div id="encoderWrapper" class="hide">
+                <div id="encoderList">
+                    <div id="NRZLUtils" class="utilsContainers">
+                        <div class="schemeNames">
+                            NRZ-L
+                        </div>
+                        <div class="showHideOption">
+                            <label for="NRZLUtilsViewCheck">Hide</label>
+                            <input class="viewCheckBoxes" id="NRZLUtilsViewCheck" type="checkbox">
+                        </div>
+                    </div>
+                    <div id="NRZIUtils" class="utilsContainers">
+                        <div class="schemeNames">
+                            NRZ-I
+                        </div>
+                        <div class="showHideOption">
+                            <label for="NRZIUtilsViewCheck">Hide</label>
+                            <input class="viewCheckBoxes" id="NRZIUtilsViewCheck" type="checkbox">
+                        </div>
+                    </div>
+                    <div id="RZUtils" class="utilsContainers">
+                        <div class="schemeNames">
+                            RZ
+                        </div>
+                        <div class="showHideOption">
+                            <label for="R2ZSUtilsViewCheck">Hide</label>
+                            <input class="viewCheckBoxes" id="R2ZSUtilsViewCheck" type="checkbox">
+                        </div>
+                    </div>
+                    <div id="MANCHESTERUtils" class="utilsContainers">
+                        <div class="schemeNames">
+                            MANC
+                        </div>
+                        <div class="showHideOption">
+                            <label for="MANCHESTERUtilsViewCheck">Hide</label>
+                            <input class="viewCheckBoxes" id="MANCHESTERUtilsViewCheck" type="checkbox">
+                        </div>
+                    </div>
+                    <div id="DMANCHESTERUtils" class="utilsContainers">
+                        <div class="schemeNames">
+                            D-MANC
+                        </div>
+                        <div class="showHideOption">
+                            <label for="DMANCHESTERUtilsViewCheck">Hide</label>
+                            <input class="viewCheckBoxes" id="DMANCHESTERUtilsViewCheck" type="checkbox">
+                        </div>
+                    </div>
+                    <div id="AMIUtils" class="utilsContainers">
+                        <div class="schemeNames">
+                            AMI
+                        </div>
+                        <div class="showHideOption">
+                            <label for="AMISUtilsViewCheck">Hide</label>
+                            <input class="viewCheckBoxes" id="AMISUtilsViewCheck" type="checkbox">
+                        </div>
+                    </div>                  
+                </div>
+                <div id="encoderOutputs">
+                    <canvas class="encoderCanvas" id="NRZL"></canvas>
+                    <canvas class="encoderCanvas" id="NRZI"></canvas>
+                    <canvas class="encoderCanvas" id="R2ZS"></canvas>
+                    <canvas class="encoderCanvas" id="MANC"></canvas>
+                    <canvas class="encoderCanvas" id="DMAN"></canvas>
+                    <canvas class="encoderCanvas" id="AMIS"></canvas>        
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="/animator.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>

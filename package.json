@@ -1,0 +1,16 @@
+{
+  "name": "ng-line-encoder",
+  "version": "1.0.7",
+  "description": "Demonstration of various line encoders used in digital logic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "./node_modules/.bin/nodemon ./server.js"
+  },
+  "author": "Zubair Bashir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
