@@ -1,4 +1,4 @@
-#Initialization_Steps :
+# Initialization_Steps :
 
 1. Install [Node.js](https://www.nodejs.org/en/download/).
 
@@ -29,11 +29,11 @@
     The project fires up at port [8888].
     Inside the web browser, preferrably [GoogleChrome], navigate to [localhost:8888] and the project build should be available to use.
     
-Ouput for the sample bit stream : 1 0 0 1 1 0 1 0
+# Ouput for the sample bit stream : 1 0 0 1 1 0 1 0
 
-![alt SampleOutput](https://drive.google.com/file/d/1pZ5dDmh-waNJ5imRuirFUMfnGKdUyrBI/view?usp=sharing)
 
-P.S. Written in a day. Please don't judge! 😉
+
+##### P.S. Written in a day. Please don't judge! 😉
 
 
 
