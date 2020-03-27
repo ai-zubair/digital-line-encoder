@@ -31,7 +31,7 @@
     
 # Ouput for the sample bit stream : 1 0 0 1 1 0 1 0
 
-
+![Alt SampleOutput](/sampleOutput.png?raw=true "Sample Output")
 
 ##### P.S. Written in a day. Please don't judge! 😉
 
