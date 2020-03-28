@@ -23,7 +23,7 @@ const amiSignal            =    document.getElementById('AMIS');
 
 
 /* service worker for offline GOOGLE FONT support */
-navigator.serviceWorker.register('/serviceWorker.js').then(serviceWorkerRegistration=>{
+navigator.serviceWorker.register('serviceWorker.js').then(serviceWorkerRegistration=>{
     console.log("Service worker registered!");
 })
 
