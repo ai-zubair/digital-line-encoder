@@ -33,7 +33,7 @@
 
 ![Alt SampleOutput](/sampleOutput.png?raw=true "Sample Output")
 
-##### P.S. Written in a day. Please don't judge! 😉
+### P.S. Written in a day. Please don't judge the coding semantics! 😉
 
 
 
